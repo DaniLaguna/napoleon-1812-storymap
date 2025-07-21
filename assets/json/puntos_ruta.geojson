@@ -1,0 +1,174 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Ciudad": "Kaunas",
+        "Movimiento": "Avance",
+        "Nº_soldados": 422000,
+        "Fecha": "1812-06-24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [23.8860, 54.8979]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Ciudad": "Vilna",
+        "Movimiento": "Avance",
+        "Nº_soldados": 400000,
+        "Fecha": "1812-06-28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.2797, 54.6872]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Ciudad": "Smorgoni",
+        "Movimiento": "Avance",
+        "Nº_soldados": 390000,
+        "Fecha": "1812-07-01"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.4011, 54.4794]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Ciudad": "Molodexno",
+        "Movimiento": "Avance",
+        "Nº_soldados": 380000,
+        "Fecha": "1812-07-04"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.8436, 54.3181]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Ciudad": "Glubokoye",
+        "Movimiento": "Avance",
+        "Nº_soldados": 370000,
+        "Fecha": "1812-07-07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.6856, 55.1386]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Ciudad": "Minsk",
+        "Movimiento": "Avance",
+        "Nº_soldados": 300000,
+        "Fecha": "1812-07-10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27.5590, 53.9006]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Ciudad": "Orsha",
+        "Movimiento": "Avance",
+        "Nº_soldados": 280000,
+        "Fecha": "1812-07-15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [30.4272, 54.5082]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Ciudad": "Smolensk",
+        "Movimiento": "Avance",
+        "Nº_soldados": 175000,
+        "Fecha": "1812-08-16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.0453, 54.7826]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Ciudad": "Borodino",
+        "Movimiento": "Avance",
+        "Nº_soldados": 140000,
+        "Fecha": "1812-09-07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.8164, 55.5297]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Ciudad": "Moscú",
+        "Movimiento": "Avance",
+        "Nº_soldados": 100000,
+        "Fecha": "1812-09-14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.6173, 55.7558]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Ciudad": "Maloyaroslavets",
+        "Movimiento": "Retirada",
+        "Nº_soldados": 90000,
+        "Fecha": "1812-10-24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.4667, 55.0167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Ciudad": "Vyazma",
+        "Movimiento": "Retirada",
+        "Nº_soldados": 60000,
+        "Fecha": "1812-11-03"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.2950, 55.2100]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Ciudad": "Berezina",
+        "Movimiento": "Retirada",
+        "Nº_soldados": 20000,
+        "Fecha": "1812-11-28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [28.9833, 54.8333]
+      }
+    }
+  ]
+}
