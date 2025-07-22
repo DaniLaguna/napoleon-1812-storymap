@@ -309,6 +309,8 @@ var config = {
     {
       id: 'berezina',
       alignment: 'right',
+      image: './assets/cruce-berezina.jpg',
+      caption: '"La Grande Armée cruzando Berezina.", January Suchodolski (1866), dominio público.<br>',
       title: 'Berezina - Catástrofe (28 de noviembre de 1812)',
       description: '<p>Cruce catastrófico: construcción de puentes bajo fuego enemigo, miles de muertos, sólo 20.000 soldados sobreviven al cruce del río.</p><p>El cruce del río Berezina se convirtió en un símbolo de la tragedia de la campaña. Los soldados franceses, agotados y congelados, lucharon por cruzar el río mientras eran atacados por las fuerzas rusas.</p><p>La retirada se convirtió en una masacre, con miles de soldados congelados o ahogados. La Grande Armée había sido prácticamente destruida.</p>',
       location: {
@@ -337,19 +339,62 @@ var config = {
       onChapterExit: []
     },
     {
-      id: "sankey-retirada",
+      id: "grafica-retirada",
       alignment: "center",
       hidden: false,
       title: "El coste humano de la campaña",
       description: `
-        <p>La siguiente gráfica de Sankey representa visualmente la dramática reducción del ejército napoleónico durante la campaña de Rusia en 1812. 
-        Se parte de más de 400.000 soldados y se muestran las sucesivas pérdidas por batallas, enfermedades, frío y retirada. 
-        Es un resumen impactante del coste humano de esta operación militar.</p><p>El azul indica avance y el rojo retirada. Pasa con el puntero del ratón por encima de cada elemento de color para conocer ciudad origen y destino, número de soldados y temperatura</p>
-        <iframe src="sankey.html" width="100%" height="450" style="border:none;"></iframe>
+        <p>La siguiente gráfica muestra la disminución progresiva del número de soldados durante la campaña de Rusia en 1812. Cada barra representa una ciudad del recorrido, 
+        y está coloreada según la temperatura estimada en esa etapa, reflejando cómo el frío fue uno de los factores más letales.</p>
+        <p>Encima de cada punto de la línea de temperatura se puede ver el valor exacto en °C. La combinación visual permite comprender el impacto simultáneo del clima y del desgaste militar.</p>
+        
+        <style>
+          .modal-img-container { text-align: center; }
+          .modal-img { max-width: 100%; border: 1px solid #ccc; box-shadow: 0 0 8px rgba(0,0,0,0.1); cursor: zoom-in; }
+          .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8); display: none; justify-content: center; align-items: center; z-index: 9999;
+          }
+          .modal-overlay img { max-width: 90%; max-height: 90%; border: 4px solid white; }
+          .modal-overlay .close-btn {
+            position: absolute; top: 20px; right: 30px; font-size: 24px; color: white; cursor: pointer;
+          }
+        </style>
+
+        <div class="modal-img-container">
+          <img src="./assets/figure_1.png" class="modal-img" onclick="document.getElementById('modal-retirada').style.display='flex'" />
+        </div>
+
+        <div id="modal-retirada" class="modal-overlay" onclick="this.style.display='none'">
+          <span class="close-btn">&times;</span>
+          <img src="./assets/figure_1.png" alt="Gráfica en grande" />
+        </div>
       `,
       location: {
         center: [30.5, 55.5],
         zoom: 4,
+        pitch: 0,
+        bearing: 0
+      },
+      mapAnimation: "flyTo",
+      rotateAnimation: false,
+      onChapterEnter: [],
+      onChapterExit: []
+    },
+    {
+      id: "video-documental-rusia",
+      alignment: "center",
+      hidden: false,
+      title: "Documental: La trampa mortal del invierno",
+      description: `
+        <p>Si te interesa conocer más sobre el contexto, las decisiones estratégicas y el impacto humano de la campaña de Rusia en 1812, te recomendamos el siguiente documental completo:</p>
+        <p><strong>Napoleón en Rusia: La Trampa Mortal del Invierno</strong> producido por SLICE Historia.</p>
+        <p>Este vídeo analiza cómo el clima, la logística y la resistencia rusa convirtieron la invasión en una catástrofe para la Grande Armée.</p>
+        <iframe width="100%" height="450" src="https://www.youtube.com/embed/xO7CnJnXHKE" title="Napoleón en Rusia: La Trampa Mortal del Invierno | SLICE Historia" frameborder="0" allowfullscreen></iframe>
+      `,
+      location: {
+        center: [37.6, 55.75], // Moscú como referencia
+        zoom: 5,
         pitch: 0,
         bearing: 0
       },
